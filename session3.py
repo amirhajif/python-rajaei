@@ -97,4 +97,7 @@ if days==0:
 elif days==7:
     print(score)
 else:
-    print(score-days)
+    if score-days<0:
+        print(0)
+    else:
+        print(score-days)
