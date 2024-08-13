@@ -85,7 +85,16 @@
 # print(fact)
 
 
-n=int(input("please enter number: "))
-for i in range(1,n+1):
-    if n%i==0:
-        print(i)
+# n=int(input("please enter number: "))
+# for i in range(1,n+1):
+#     if n%i==0:
+#         print(i)
+
+score=int(input("please enter score: "))
+days=int(input("days of trip: "))
+if days==0:
+    print(20)
+elif days==7:
+    print(score)
+else:
+    print(score-days)
