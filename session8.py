@@ -20,6 +20,12 @@ class User:
         self.password=password
         self.age=age
 
+    # getter
+    def getUsername(self):
+        return self.username
+    # setter
+    def setUsername(self,username):
+        self.username=username
 # instance-OBJECT
 # user=User("amirhossein","amir123",23)
 
@@ -65,3 +71,17 @@ method:
 
 # name="amir"
 # print(name.upper())
+
+
+# encapsulation
+# setter-getter
+
+# be sorat mostaghim hichvaght az tarigh object
+# be attribute ha connect nashavid
+
+user=User("amirhossein","amir123",23)
+# print(user.age)
+# user.username="amirreza"
+user.setUsername("amirreza")
+
+print(user.getUsername())
